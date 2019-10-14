@@ -1,0 +1,6 @@
+Given a string, find the length of the longest substring
+without repeating characters.
+
+Can you find a solution in linear time?
+
+Received email: 3rd October 2019
