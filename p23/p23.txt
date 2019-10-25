@@ -1,0 +1,13 @@
+You are given two singly linked lists. The lists intersect
+at some node. Find, and return the node. Note: the lists
+are non-cyclical.
+
+Example:
+
+A = 1 -> 2 -> 3 -> 4
+B = 6 -> 3 -> 4
+
+This should return 3 (you may assume that any nodes with
+the same value are the same node).
+
+Received: 24th October 2019
