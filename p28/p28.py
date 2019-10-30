@@ -20,7 +20,7 @@ def dfs(node, adjList, nodeState, stack):
                 return True
         elif nodeState[neighbor] == 1:
             return True
-        #elif nodeState[neighbor] == 1: pass
+        #elif nodeState[neighbor] == 2: pass
     stack.append(node)
     nodeState[node] = 2
     return False
