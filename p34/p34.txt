@@ -8,3 +8,5 @@ For example: [9, 11, 8, 5, 7, 10]
 Here, the optimal trade is to buy when the price is 5, and
 sell when it is 10, so the return value should be 5
 (profit = 10 - 5 = 5).
+
+Received: 4th November 2019

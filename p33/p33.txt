@@ -8,3 +8,5 @@ For example:
 
 This input should return [(1, 3), (4, 10), (20, 25)] since
 (5, 8) and (4, 10) can be merged into (4, 10).
+
+Received: 3rd November 2019
