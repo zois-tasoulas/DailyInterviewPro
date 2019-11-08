@@ -1,0 +1,5 @@
+You are given an array of k sorted singly linked lists.
+Merge the linked lists into a single sorted linked list and
+return it.
+
+Received: 7th November 2019
