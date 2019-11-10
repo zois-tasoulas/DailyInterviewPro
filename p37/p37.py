@@ -33,6 +33,10 @@ class List:
 
 class Solution:
     def mergeListsSlow(self, array):
+        '''
+        O(n^2) time complexity, where n is the total number
+        of element in all the lists
+        '''
         indexArray = []
         for member in array:
             indexArray.append(member)
@@ -55,6 +59,11 @@ class Solution:
         return head.next
 
     def mergeLists(self, array):
+        '''
+        O(n*k*logk) time complexity, where n is the number
+        of total elements in all the lists. O(k + n) space
+        complexity dew to the heap.
+        '''
         heap = []
         for member in array:
             if member:
@@ -70,6 +79,43 @@ class Solution:
                 _, current.next = heappop(heap)
                 current = current.next
         return head.next
+
+    def mergeSortedLists(self, array, leftIndex, rightIndex):
+        head = List(0)
+        current = head
+        while array[leftIndex] or array[rightIndex]:
+            if array[leftIndex] and array[rightIndex]:
+                if array[leftIndex].data < array[rightIndex].data:
+                    current.next = array[leftIndex]
+                    array[leftIndex] = array[leftIndex].next
+                else:
+                    current.next = array[rightIndex]
+                    array[rightIndex] = array[rightIndex].next
+            elif array[leftIndex]:
+                current.next = array[leftIndex]
+                array[leftIndex] = array[leftIndex].next
+            else:
+                current.next = array[rightIndex]
+                array[rightIndex] = array[rightIndex].next
+            current = current.next
+        array[leftIndex] = head.next
+
+    def mergeLists2(self, array):
+        '''
+        O(n*k*logk) time complexity, where n is the number
+        of total elements in all the lists. O(1) space
+        complexity.
+        '''
+        i = 0
+        j = len(array) - 1
+        while j > 0:
+            self.mergeSortedLists(array, i, j)
+            i += 1
+            j -= 1
+            if j <= i:
+                i = 0
+            
+        return array[0]
 
 if __name__ == '__main__':
     array = []
@@ -87,4 +133,4 @@ if __name__ == '__main__':
     array.append(head6)
     head7 = None
     array.append(head7)
-    Solution().mergeLists(array).printList()
+    Solution().mergeLists2(array).printList()
