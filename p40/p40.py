@@ -9,14 +9,14 @@ class Solution:
         for i in range(length):
             if string1[i] != string2[i]:
                 differences += 1
-                if differences == 1:
+                if differences > 2:
+                    return False
+                elif differences == 1:
                     char1 = string1[i]
                     char2 = string2[i]
                 else:
                     if char1 != string2[i] or char2 != string1[i]:
                         return False
-            if differences > 2:
-                return False
         return True
 
 if __name__ == '__main__':
