@@ -1,7 +1,7 @@
 class Solution:
     def numberOfParenthesis(self, string):
         """
-        :type: String
+        :type: str
         :rtype: int
         """
         stack = []
