@@ -1,0 +1,4 @@
+Given a time in the format of hour and minute, calculate
+the angle of the hour and minute hand on a clock.
+
+Received: 3rd December 2019
