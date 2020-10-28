@@ -17,7 +17,7 @@ list.
 |6| Reverse a Linked List |[p6.py](https://github.com/zois-tasoulas/DailyInterviewPro/blob/master/p6/p6.py)|[]()|
 |7| Sorting a list with 3 unique numbers |[p7.py](https://github.com/zois-tasoulas/DailyInterviewPro/blob/master/p7/p7.py)|[]()|
 |8| Two-Sum |[p8.py](https://github.com/zois-tasoulas/DailyInterviewPro/blob/master/p8/p8.py)|[1](https://leetcode.com/problems/two-sum/)|
-|9| Find the non-duplicate number |[p9.py](https://github.com/zois-tasoulas/DailyInterviewPro/blob/master/p9/p9.py)|[]()|
+|9| Find the non-duplicate number |[p9.py](https://github.com/zois-tasoulas/DailyInterviewPro/blob/master/p9/p9.py)|[136](https://leetcode.com/problems/single-number/)|
 |10| Non-decreasing Array with Single Modification |[p10.py](https://github.com/zois-tasoulas/DailyInterviewPro/blob/master/p10/p10.py)|[]()|
 |11| Floor and Ceiling of a Binary Search Tree |[p11.py](https://github.com/zois-tasoulas/DailyInterviewPro/blob/master/p11/p11.py)|[]()|
 |12| Invert a Binary Tree |[p12.py](https://github.com/zois-tasoulas/DailyInterviewPro/blob/master/p12/p12.py)|[]()|
